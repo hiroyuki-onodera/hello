@@ -1,0 +1,12 @@
+---
+- hosts: all
+  #gather_facts: false
+  become: true
+  vars:
+  vars_files:
+  tasks:
+    - name: import_role local role
+      import_role:
+        #name: "{{ lookup('env', 'PWD') }}"
+        #name: "../{{ lookup('env', 'PWD') | basename }}"
+        name: hello
