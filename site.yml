@@ -7,6 +7,4 @@
   tasks:
     - name: import_role local role
       import_role:
-        #name: "{{ lookup('env', 'PWD') }}"
-        #name: "../{{ lookup('env', 'PWD') | basename }}"
-        name: hello
+         name: hello
