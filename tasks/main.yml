@@ -1,2 +1,8 @@
 ---
 # tasks file for hello
+
+- debug:
+    msg: hello world
+
+- debug:
+    var: vars
